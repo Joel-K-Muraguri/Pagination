@@ -15,4 +15,5 @@ class ListViewModel : ViewModel() {
     val user: Flow<PagingData<User>> = Pager(PagingConfig(pageSize = 6)) {
         UserSource()
     }.flow.cachedIn(viewModelScope)
+
 }

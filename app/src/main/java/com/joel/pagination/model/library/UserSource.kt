@@ -12,7 +12,7 @@ class UserSource : PagingSource<Int, User>() {
         return state.anchorPosition
     }
 
-    override suspend fun load(params: LoadParams<Int>):            LoadResult<Int, User> {
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, User> {
         return try {
             val nextPage = params.key ?: 1
             val userList = RetrofitClient.RetrofitClient.apiService.getUserList(page = nextPage)
