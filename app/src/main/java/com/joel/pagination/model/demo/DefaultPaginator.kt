@@ -1,4 +1,4 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.demo
 
 class DefaultPaginator<Key, Items>(
     private val initialKey : Key,
@@ -32,8 +32,5 @@ class DefaultPaginator<Key, Items>(
 
     override fun reset() {
         currentKey = initialKey
-
     }
-
-
 }

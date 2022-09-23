@@ -1,6 +1,5 @@
-package com.joel.pagination
+package com.joel.pagination.model.library
 
-import android.content.Context
 import android.widget.Toast
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
@@ -11,19 +10,17 @@ import androidx.paging.PagingData
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.items
-import com.joel.pagination.model.ListViewModel
-import com.joel.pagination.model.User
 import kotlinx.coroutines.flow.Flow
 
 @Composable
-fun UserList(modifier: Modifier = Modifier, viewModel:ListViewModel = androidx.lifecycle.viewmodel.compose.viewModel(), ) {
+fun UserList(modifier: Modifier = Modifier, viewModel: ListViewModel = androidx.lifecycle.viewmodel.compose.viewModel(), ) {
     UserInfoList(modifier, userList = viewModel.user, )
 }
 
 @Composable
 fun UserInfoList(modifier: Modifier, userList: Flow<PagingData<User>>) {
     val context = LocalContext.current
-    val userListItems: LazyPagingItems<User> =            userList.collectAsLazyPagingItems()
+    val userListItems: LazyPagingItems<User> = userList.collectAsLazyPagingItems()
 
     LazyColumn {
         items(userListItems) { item ->

@@ -1,4 +1,4 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.library
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,4 +1,4 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.demo
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -30,7 +30,6 @@ class MainViewModel : ViewModel() {
         getNextKey = {
             state.page + 1
         },
-
         onError = {
             state = state.copy(error = it?.localizedMessage)
         },
@@ -43,7 +42,6 @@ class MainViewModel : ViewModel() {
     fun loadNextItems(){
         viewModelScope.launch {
             paginator.loadItems()
-
         }
     }
 }

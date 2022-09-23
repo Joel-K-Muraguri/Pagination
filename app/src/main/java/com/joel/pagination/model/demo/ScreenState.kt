@@ -1,4 +1,6 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.demo
+
+import com.joel.pagination.model.demo.ListItem
 
 data class ScreenState(
     val error : String? = null,

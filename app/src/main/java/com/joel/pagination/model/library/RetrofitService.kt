@@ -1,5 +1,6 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.library
 
+import com.joel.pagination.model.library.UserResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

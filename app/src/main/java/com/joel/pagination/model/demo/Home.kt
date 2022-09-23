@@ -1,4 +1,4 @@
-package com.joel.pagination
+package com.joel.pagination.model.demo
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -9,7 +9,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.joel.pagination.model.MainViewModel
 
 @Composable
 fun Home(){

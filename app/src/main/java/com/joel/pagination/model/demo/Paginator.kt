@@ -1,4 +1,4 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.demo
 
 interface Paginator <Key, Items>{
 

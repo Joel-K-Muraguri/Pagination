@@ -1,7 +1,5 @@
-package com.joel.pagination
+package com.joel.pagination.model.library
 
-import android.graphics.Color
-import android.view.Surface
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -22,7 +20,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImagePainter
 import coil.compose.SubcomposeAsyncImage
 import coil.compose.SubcomposeAsyncImageContent
-import com.joel.pagination.model.User
+import com.joel.pagination.model.library.User
 
 @Composable
 fun EmployeeItem(empData: User, onClick: () -> Unit) {

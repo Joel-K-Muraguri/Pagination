@@ -1,10 +1,4 @@
-package com.joel.pagination.model
-
-data class ListItem(
-    val item: String,
-    val description: String,
-)
-
+package com.joel.pagination.model.library
 
 data class UserResponse (
     var page: Int,

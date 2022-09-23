@@ -1,8 +1,7 @@
-package com.joel.pagination.model
+package com.joel.pagination.model.library
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.joel.pagination.model.RetrofitClient.RetrofitClient.apiService
 import retrofit2.HttpException
 import java.io.IOException
 
